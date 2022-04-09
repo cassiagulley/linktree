@@ -1,7 +1,7 @@
 ﻿using System;
 namespace LinktreeTakeHome.Models
 {
-	public class ClassicLink
+	public class ClassicLink : Link
 	{
 		public int Id { get; set;}
 		public Uri Url { get; set;}
