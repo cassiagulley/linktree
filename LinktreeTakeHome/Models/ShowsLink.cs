@@ -1,7 +1,7 @@
 ﻿using System;
 namespace LinktreeTakeHome.Models
 {
-	public class ClassicLink : Link
+	public class ShowsLink : Link
 	{
 		// Both theese could be set to date/time format for extensibility
 		public bool SoldOut { get; set; }

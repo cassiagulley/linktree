@@ -8,17 +8,15 @@ namespace LinktreeTakeHome.Services
 	{
 		static List<Link> Links { get; }
 
-
-		public static  LinkService()
-		{
-			// TODO: Create/add new links here for preliminary testing
-		}
+        // TODO: Create/add new links here for preliminary testing
 
         // TODO: Add helper functions to match poject specifications
 
         public static List<Link> GetAll() => Links;
 
-        public static Link? Get(int id) => Links.FirstOrDefault(p => p.Id == id);
+
+        // TODO: Check for edge cases and nullable values
+        public static Link Get(int id) => Links.FirstOrDefault(p => p.Id == id);
 
         public static void Add(Link link)
         {

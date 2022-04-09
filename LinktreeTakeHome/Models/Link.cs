@@ -3,8 +3,8 @@ namespace LinktreeTakeHome.Models
 {
 	public abstract class Link
 	{
-		public abstract int Id { get; set; }
-		public abstract Uri Url { get; set; }
+		public int Id { get; set; }
+		public Uri Url { get; set; }
 	}
 }
 
