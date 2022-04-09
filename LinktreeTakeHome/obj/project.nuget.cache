@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "3hoiEu1FNKuhvsN2U8jX9BgjVsQWOWPNWdYXHuZGBOW4shdXYbxb1ZFjWyvrZ2OsIUjNVI1MgfzbCAA7i5nZig==",
+  "success": true,
+  "projectFilePath": "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/LinktreeTakeHome.csproj",
+  "expectedPackageFiles": [
+    "/Users/cassia/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/cassia/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/cassia/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/cassia/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/cassia/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/cassia/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
