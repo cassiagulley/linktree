@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/LinktreeTakeHome.csproj": {}
+    "/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/LinktreeTakeHome.csproj": {}
   },
   "projects": {
-    "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/LinktreeTakeHome.csproj": {
+    "/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/LinktreeTakeHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/LinktreeTakeHome.csproj",
+        "projectUniqueName": "/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/LinktreeTakeHome.csproj",
         "projectName": "LinktreeTakeHome",
-        "projectPath": "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/LinktreeTakeHome.csproj",
+        "projectPath": "/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/LinktreeTakeHome.csproj",
         "packagesPath": "/Users/cassia/.nuget/packages/",
-        "outputPath": "/Users/cassia/Desktop/2022/linktree/LinktreeTakeHome/LinktreeTakeHome/obj/",
+        "outputPath": "/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cassia/.nuget/NuGet/NuGet.Config"
