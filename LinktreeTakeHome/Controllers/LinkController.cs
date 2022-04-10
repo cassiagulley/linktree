@@ -51,7 +51,7 @@ namespace LinktreeTakeHome.Controllers
 
         // POST link/classiclinks
         [HttpPost("/classiclink")]
-        public IActionResult Create([FromBody]ClassicLink link)
+        public IActionResult Create(ClassicLink link)
         {
             // Automatically does model checking errors
             if (ModelState.IsValid)
@@ -61,7 +61,7 @@ namespace LinktreeTakeHome.Controllers
             }
             else
             {
-                //TODO: error handling
+                return BadRequest();
             }
         }
 
@@ -77,7 +77,7 @@ namespace LinktreeTakeHome.Controllers
             }
             else
             {
-                //TODO: error handling
+                return BadRequest();
             }
         }
 
@@ -93,7 +93,7 @@ namespace LinktreeTakeHome.Controllers
             }
             else
             {
-                //TODO: error handling
+                return BadRequest();
             }
         }
     }

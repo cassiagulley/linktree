@@ -75,7 +75,7 @@ namespace LinktreeTakeHome.Services
             Links.Add(link);
         }
 
-        public static void AddMusicLink(Link link)
+        public static void AddMusicStyle(Link link)
         {
             // Assign date created
             link.DateCreated = DateTime.Now;
