@@ -32,11 +32,10 @@ namespace LinktreeTakeHome.Services
         public static List<Link> GetUserLinks(int userId)
         {
             //TODO: Error checking and input validation for links - null/wrong inputs
-
             List<Link> userLinks = new List<Link>();
 
             foreach (Link link in Links) {
-                if (link.UserId == userId) {
+                if (link.UserId.Equals(userId)) {
                     userLinks.Add(link);
                 }
             }
@@ -55,10 +54,12 @@ namespace LinktreeTakeHome.Services
         // TODO: Absrtact out Link creation logic
         public static void AddClassicLink(ClassicLink link)
         {
+            // TODO: remove Id and dateCreated from GET request 
             // Assign date created
             link.DateCreated = DateTime.Now;
 
-            // The assumption is that the serverside generates new Id's 
+            // The assumption is that the serverside generates new Id's
+            
             link.Id = nextId++;
 
             Links.Add(link);
@@ -66,6 +67,8 @@ namespace LinktreeTakeHome.Services
 
         public static void AddShowsLink(Link link)
         {
+            // TODO: remove Id and dateCreated from GET request
+
             // Assign date created
             link.DateCreated = DateTime.Now;
 
@@ -77,6 +80,7 @@ namespace LinktreeTakeHome.Services
 
         public static void AddMusicStyle(Link link)
         {
+            // TODO: remove Id and dateCreated from GET request 
             // Assign date created
             link.DateCreated = DateTime.Now;
 

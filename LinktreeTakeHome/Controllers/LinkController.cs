@@ -35,10 +35,10 @@ namespace LinktreeTakeHome.Controllers
 
         // GET link/user/userId
         [HttpGet("userLinks/{userId}")]
-        public ActionResult<List<Link>> GetUserLinks(int UserId)
+        public ActionResult<List<Link>> GetUserLinks(int userId)
         {
             // Automatically sorted by date created
-            List<Link> userLinks = LinkService.GetUserLinks(UserId);
+            List<Link> userLinks = LinkService.GetUserLinks(userId);
 
             if (userLinks.Count == 0 || userLinks == null)
             {
