@@ -6,7 +6,25 @@ namespace LinktreeTakeHome.Services
 	// An in-memory link data service class
 	public static class LinkService
 	{
-		static List<Link> Links { get; }
+
+        static LinkService() {
+            Links = new List<Link>
+        {
+            new ClassicLink { Id = 1, Url = null, UserId = 1, Title = "ClassicLink1" },
+            new ClassicLink { Id = 2, Url = null, UserId = 2, Title = "ClassicLink2" },
+            new ShowsLink { Id = 3, Url = null, UserId = 1, SoldOut = false, Available = true },
+            new ShowsLink { Id = 4, Url = null, UserId = 2, SoldOut = true, Available = true },
+            new ShowsLink { Id = 5, Url = null, UserId = 1, SoldOut = false, Available = false },
+            new ShowsLink { Id = 6, Url = null, UserId = 2, SoldOut = false, Available = true },
+            new MusicStyle { Id = 7, Url = null, UserId = 1 },
+            new MusicStyle { Id = 8, Url = null, UserId = 2 },
+        };
+        }
+
+
+
+
+        static List<Link> Links { get; }
 
         // TODO: Create/add new links here for preliminary testing
 
@@ -16,7 +34,7 @@ namespace LinktreeTakeHome.Services
 
 
         // TODO: Check for edge cases and nullable values
-        public static Link Get(int id) => Links.FirstOrDefault(p => p.Id == id);
+        public static Link? Get(int id) => Links.FirstOrDefault(p => p.Id == id);
 
         public static void Add(Link link)
         {
