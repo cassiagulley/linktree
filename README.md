@@ -41,7 +41,7 @@ The following image denotes the requests available and the routes the endpoints 
 - ```POST /showsLink``` handles the addition of a shows link
 - ```POST /musicStyle``` handles the addition of a music style link
 
-*Assumptions: Assumping the clientside specifies the userId and link type*
+*Assumptions: Assuming the clientside specifies the userId and link type*
 
 # Schema
 This solution is based on the following assumed schema
