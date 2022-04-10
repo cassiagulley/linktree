@@ -34,7 +34,7 @@ namespace LinktreeTakeHome.Controllers
         }
 
         // GET link/user/userId
-        [HttpGet("userLinks/{UserId}")]
+        [HttpGet("userLinks/{userId}")]
         public ActionResult<List<Link>> GetUserLinks(int UserId)
         {
             // Automatically sorted by date created
@@ -49,8 +49,8 @@ namespace LinktreeTakeHome.Controllers
         }
 
 
-        // POST link/classiclinks
-        [HttpPost("/classiclink")]
+        // POST link/classicLink
+        [HttpPost("/classicLink")]
         public IActionResult Create(ClassicLink link)
         {
             // Automatically does model checking errors
@@ -65,8 +65,8 @@ namespace LinktreeTakeHome.Controllers
             }
         }
 
-        // POST link/classiclinks
-        [HttpPost("/showslink")]
+        // POST link/showsLink
+        [HttpPost("/showsLink")]
         public IActionResult Create(ShowsLink link)
         {
             // Automatically does model checking errors
@@ -81,8 +81,8 @@ namespace LinktreeTakeHome.Controllers
             }
         }
 
-        // POST link/classiclinks
-        [HttpPost("/musicstyle")]
+        // POST link/musicStyle
+        [HttpPost("/musicStyle")]
         public IActionResult Create(MusicStyle link)
         {
             // Automatically does model checking errors
