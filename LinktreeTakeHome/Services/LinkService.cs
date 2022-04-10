@@ -3,7 +3,9 @@ using LinktreeTakeHome.Models;
 
 namespace LinktreeTakeHome.Services
 {
-	// An in-memory link data service class
+    // TODO: Unit test functionality
+
+	// Creating an in-memory link data service class with given links for ease of testing
 	public static class LinkService {
 
         static List<Link> Links { get; }
@@ -27,7 +29,6 @@ namespace LinktreeTakeHome.Services
         }
 
 
-
         public static List<Link> GetUserLinks(int userId)
         {
             //TODO: Error checking and input validation for links - null/wrong inputs
@@ -46,78 +47,43 @@ namespace LinktreeTakeHome.Services
             return userLinks;
         }
 
-
         public static List<Link> GetAll() => Links;
-
 
         // TODO: Check for edge cases and nullable values
         public static Link? Get(int id) => Links.FirstOrDefault(p => p.Id == id);
 
-
-        public static void Add(Link link)
+        // TODO: Absrtact out Link creation logic
+        public static void AddClassicLink(ClassicLink link)
         {
-            // TODO: common link error and imput checking
+            // Assign date created
+            link.DateCreated = DateTime.Now;
 
             // The assumption is that the serverside generates new Id's 
             link.Id = nextId++;
 
-            if (link.LinkType.Equals(1)) { // Classic Link
+            Links.Add(link);
+        }
 
-                AddClassicLink(Link link);
+        public static void AddShowsLink(Link link)
+        {
+            // Assign date created
+            link.DateCreated = DateTime.Now;
 
-            } else if (link.LinkType.Equals(2)) { // Shows Link
-
-                AddShowsLink(Link link);
-
-            } else if (link.LinkType.Equals(3)) { // Music Link
-
-                AddMusicLink(Link link);
-
-            } else {
-
-                // Throw incorrect link type error
-
-            }
-
+            // The assumption is that the serverside generates new Id's 
+            link.Id = nextId++;
 
             Links.Add(link);
-
-        }
-
-        public static void AddClassicLink(Link link) {
-            // TODO: link type specific checking
-
-        }
-
-        public static void AddShowsLink(Link link){
-            // TODO: link type specific checking
-
-
         }
 
         public static void AddMusicLink(Link link)
         {
-            // TODO: link type specific checking
+            // Assign date created
+            link.DateCreated = DateTime.Now;
 
-        }
+            // The assumption is that the serverside generates new Id's 
+            link.Id = nextId++;
 
-
-        public static void Delete(int id)
-        {
-            var link = Get(id);
-            if (link is null)
-                return;
-
-            Links.Remove(link);
-        }
-
-        public static void Update(Link link)
-        {
-            var index = Links.FindIndex(p => p.Id == link.Id);
-            if (index == -1)
-                return;
-
-            Links[index] = link;
+            Links.Add(link);
         }
 
     }

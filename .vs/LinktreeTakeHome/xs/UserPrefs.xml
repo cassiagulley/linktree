@@ -1,9 +1,22 @@
 ﻿<Properties StartupConfiguration="{BCA89DE8-98CC-4FFA-AF1A-53F662FB2AE7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LinktreeTakeHome/Models/ClassicLink.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/Controllers/LinkController.cs" relfile="LinktreeTakeHome/Controllers/LinkController.cs" line="55" column="1" />
+      <Breakpoint file="/Users/cassia/Desktop/2022/linktree/linktree/LinktreeTakeHome/Controllers/LinkController.cs" relfile="LinktreeTakeHome/Controllers/LinkController.cs" line="54" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LinktreeTakeHome PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LinktreeTakeHome/Models/MusicStyle.cs">
     <Files>
-      <File FileName="LinktreeTakeHome/Models/ClassicLink.cs" Line="11" Column="1" />
-      <File FileName="LinktreeTakeHome/Controllers/WeatherForecastController.cs" Line="30" Column="20" />
-      <File FileName="LinktreeTakeHome/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="LinktreeTakeHome/Models/ClassicLink.cs" Line="2" Column="1" />
+      <File FileName="LinktreeTakeHome/Models/MusicStyle.cs" Line="12" Column="1" />
+      <File FileName="LinktreeTakeHome/Models/ShowsLink.cs" Line="14" Column="30" />
+      <File FileName="LinktreeTakeHome/Services/LinkService.cs" Line="64" Column="31" />
+      <File FileName="LinktreeTakeHome/Controllers/LinkController.cs" Line="54" Column="10" />
+      <File FileName="LinktreeTakeHome/Models/Link.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +25,7 @@
             <Node name="LinktreeTakeHome" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="ClassicLink.cs" selected="True" />
+                <Node name="MusicStyle.cs" selected="True" />
               </Node>
               <Node name="Services" expanded="True" />
             </Node>
@@ -24,11 +37,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.LinktreeTakeHome PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace LinktreeTakeHome.Models
 {
 	public class MusicStyle : Link

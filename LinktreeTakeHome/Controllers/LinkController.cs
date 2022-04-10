@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LinktreeTakeHome.Models;
 using LinktreeTakeHome.Services;
+using System.Net;
+
 
 namespace LinktreeTakeHome.Controllers
 {
@@ -31,8 +33,8 @@ namespace LinktreeTakeHome.Controllers
             return link;
         }
 
-        // GET link/links/userId
-        [HttpGet("userlinks/{UserId}")]
+        // GET link/user/userId
+        [HttpGet("userLinks/{UserId}")]
         public ActionResult<List<Link>> GetUserLinks(int UserId)
         {
             // Automatically sorted by date created
@@ -47,37 +49,52 @@ namespace LinktreeTakeHome.Controllers
         }
 
 
-
-        // POST link/links
-        [HttpPost]
-        public IActionResult Create(Link link)
+        // POST link/classiclinks
+        [HttpPost("/classiclink")]
+        public IActionResult Create([FromBody]ClassicLink link)
         {
-
-            //Do error checking later
-
-
-            LinkService.Add(link);
-            return CreatedAtAction(nameof(Create), new { id = link.Id }, link);
-        }
-        
-
-        // PUT link/links/id
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-
-
-
-            // error checking 
-
-
-
+            // Automatically does model checking errors
+            if (ModelState.IsValid)
+            {
+                LinkService.AddClassicLink(link);
+                return CreatedAtAction(nameof(Create), new { id = link.Id }, link);
+            }
+            else
+            {
+                //TODO: error handling
+            }
         }
 
-        // DELETE link/links/id
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        // POST link/classiclinks
+        [HttpPost("/showslink")]
+        public IActionResult Create(ShowsLink link)
         {
+            // Automatically does model checking errors
+            if (ModelState.IsValid)
+            {
+                LinkService.AddShowsLink(link);
+                return CreatedAtAction(nameof(Create), new { id = link.Id }, link);
+            }
+            else
+            {
+                //TODO: error handling
+            }
+        }
+
+        // POST link/classiclinks
+        [HttpPost("/musicstyle")]
+        public IActionResult Create(MusicStyle link)
+        {
+            // Automatically does model checking errors
+            if (ModelState.IsValid)
+            {
+                LinkService.AddMusicStyle(link);
+                return CreatedAtAction(nameof(Create), new { id = link.Id }, link);
+            }
+            else
+            {
+                //TODO: error handling
+            }
         }
     }
 }
